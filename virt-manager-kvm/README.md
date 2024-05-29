@@ -4,6 +4,10 @@ Under Ubuntu this is not exactly nice, at least up to Ubuntu 20 my experiences w
 
 But under Debian this seems to be one of environment of choice.
 
+## Note for the future
+Base on: https://stackoverflow.com/questions/7927750/specify-an-ssh-key-for-git-push-for-a-given-domain
+Configuration of local repository to use specific key - inside the repository: `git config --add --local core.sshCommand 'ssh -i /home/user/.ssh/id_private_key'`
+
 
 ## How to ssh instance
 * In VM: ip addr show -> find address (`vm_ip`) of `enp1s0` or similar, not `lo`
