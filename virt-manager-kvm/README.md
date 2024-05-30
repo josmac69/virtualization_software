@@ -27,3 +27,8 @@ Steps to follow:
 * Start VM
 * create mount point: `sudo mkdir /mnt/mypoint`
 * mount host folder using mount name: `sudo mount -t virtiofs mount_name /mnt/mypoint`
+
+## Error on start "network default is not active"
+Based on https://askubuntu.com/questions/1036297/cant-start-kvm-guest-network-default-is-not-active
+* check status: `sudo virsh net-list --all`
+* start network: `sudo virsh net-start default`
